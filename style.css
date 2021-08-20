@@ -1,0 +1,51 @@
+#container{width: 80%;
+margin: 0 auto;}
+
+#flex-container{display: flex;
+ column-gap: 5rem;}
+
+#image-container{width: 50%;}
+
+#flex-img{width: 100%;}
+
+#blog-container{width: 50%;
+    font-size: 1.3rem;}
+
+#memory{margin-top: 3rem;
+margin-bottom: 0;}
+
+#storage{margin-top: 3rem;
+margin-bottom: 0;}
+
+#delivery{margin-top: 3rem;
+margin-bottom: 0;}
+
+#pricing-container{margin-top: 3rem;}
+
+.pricing{display: flex;
+margin: 0;
+column-gap: 5rem;}
+
+hr{width: 20rem;
+position: relative;
+right: 5.5rem;
+background-color: black;
+height: 1.5px;}
+
+#total-pricing{
+    display: flex;
+    column-gap: 9.6rem;
+}
+
+#input{height: 1.5rem;}
+
+#apply-button{background-color: rgb(236, 15, 15);
+border-radius: 5px;
+border: none;
+width: 4rem;
+height: 2rem;}
+
+#total-cost{
+    font-size: 2rem;
+    text-align: center;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my mac book computer</title>
+    <!-- css style stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="container">
+        <div id="flex-container">
+            <!-- images section -->
+            <div id="image-container"><img id="flex-img" src="images/mac.png" alt=""></div>
+            <!-- blog section -->
+            <div id="blog-container">
+                <h2>Customize your Blue 24 inch <br>
+                    iMac with Apple M1 Chip</h2>
+                <p id="blog-paragraph">Apple M1 Chip with 8-core CPU with 4 performance cores and 4 efficiency
+                    cores,7-core GPU and 16
+                    core-Neutral engine 8gb unified memory 256gb ssd storage two thunderbold/USB 4 ports magic mouse
+                    magic keyboard us English.</p>
+                <!-- memory section -->
+                <div>
+                    <h4 id="memory">memory</h4>
+                    <button>8GB unified memory</button>
+                    <button id="16gb-btn">16GB unified memory</button>
+                </div>
+                <div>
+                    <h4 id="storage">storage</h4>
+                    <button>256GB ssd storage</button>
+                    <button id="512gb-btn">512GB ssd storage</button>
+                    <button id="1tb-btn">1 ssd storage</button>
+                </div>
+                <div>
+                    <h4 id="delivery">choose your delivery option</h4>
+                    <button>Friday, Aug 25 FREE Prime elivery</button>
+                    <button id="aug21-btn">Friday, Aug 21 Delivery Charge $20</button>
+                </div>
+                <!-- pricing section -->
+                <div id="pricing-container">
+                    <div class="pricing">
+                        <div>
+                            <p>Best Price</p>
+                            <p>Extra Memory Cost</p>
+                            <p>Extra Storage Cost</p>
+                            <p>Delivery Charge</p>
+                        </div>
+                        <div>
+                            <p>$1299</p>
+                            <p>$<span id="extra-memory">0</span></p>
+                            <p>$ <span id="extra-storage">0</span></p>
+                            <p>$ <span id="delivery-cost">0</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="total-pricing">
+                        <p>Total Price</p>
+                        <p>$ <span id="total-price">1299</span></p>
+                    </div>
+                    <input id="input" type="text">
+                    <button id="apply-button">Apply</button>
+                </div>
+            </div>
+    </main>
+    <p id="total-cost">Total: $ <span id="final-total">1299</span></p>
+    <!-- js file -->
+    <script src="js/mac-book.js"></script>
+</body>
+
+</html>
