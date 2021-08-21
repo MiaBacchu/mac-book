@@ -23,18 +23,25 @@ function gettingTotal() {
 function discountedTotal() {
     const matchCode = document.getElementById('input');
     if (matchCode.value == 'stevekaku') {
-        const finalTotalText = document.getElementById('final-total');
-        const finalTotal = parseFloat(finalTotalText.innerText)
-        const discount = finalTotal / 5;
-        const discountedTotal = finalTotal - discount;
-        finalTotalText.innerText = discountedTotal;
+        const TotalPriceText = document.getElementById('total-price');
+        const TotalPrice = parseFloat(TotalPriceText.innerText)
+        const discount = TotalPrice / 5;
+        const discountedTotal = TotalPrice - discount;
+        document.getElementById('final-total').innerText = discountedTotal;
         matchCode.value = '';
     }
 }
-
+// getting 8gb memory button event-handler
+document.getElementById('8gb-btn').addEventListener('click', function () {
+    updatePrice('extra-memory', 0)
+})
 // getting 16gb memory button event-handler
 document.getElementById('16gb-btn').addEventListener('click', function () {
     updatePrice('extra-memory', 180)
+})
+// getting 256gb storage button event-handler
+document.getElementById('256gb-btn').addEventListener('click', function () {
+    updatePrice('extra-storage', 0)
 })
 // getting 512gb storage button event-handler
 document.getElementById('512gb-btn').addEventListener('click', function () {
@@ -45,10 +52,13 @@ document.getElementById('1tb-btn').addEventListener('click', function () {
     updatePrice('extra-storage', 180)
 })
 // getting aug21 button event-handler
+document.getElementById('aug25-btn').addEventListener('click', function () {
+    updatePrice('delivery-cost', 0)
+})
+// getting aug21 button event-handler
 document.getElementById('aug21-btn').addEventListener('click', function () {
     updatePrice('delivery-cost', 20)
 })
-
 // apply button event-handler
 document.getElementById('apply-button').addEventListener('click', function () {
     discountedTotal()
