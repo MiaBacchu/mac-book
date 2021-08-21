@@ -32,12 +32,15 @@ right: 5.5rem;
 background-color: black;
 height: 1.5px;}
 
+#promo{margin-bottom: 0;}
+
 #total-pricing{
     display: flex;
     column-gap: 9.6rem;
 }
 
-#input{height: 1.5rem;}
+#input{height: 1.5rem;
+width: 15rem;}
 
 #apply-button{background-color: rgb(236, 15, 15);
 border-radius: 5px;
